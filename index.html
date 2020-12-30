@@ -1,0 +1,102 @@
+<!-- favicon is the stylish or cute icon on the browser tab -->
+<!-- to use favicon, add the link tag and change the rel to "icon" -->
+<!-- Q: what is div? it is a tag that divide contents in a webpage/div=content division element -->
+<!-- div dont do anything unless using CSS -->
+<!-- Q: why when using div tag, there is a gap surrounded it? because browser a;ready set the default CSS values -->
+<!-- Q: why no changes when chnaging values of the top div? the tag we used already set the default px so that's why it remain same-->
+<!-- margin-before is the top, margin-after is bottom, margin-start is the left sided and margin-end is the right sided -->
+<!-- <span> is an inline-display element; other common inline element are: <img>, <span> and <a> anchors tag
+Why need to use block instead of inline? cannot change the width even if we set a property using inline elem,
+block elem can and even make it as 'inline' by adding a property {display: inline;}-->
+<!--Q: how to use an element that is on the same line and at the same time, able to modify the width?
+A: by using {display:inline-block;}
+Block: the width of an element reach until the edge of a webpage
+Inline: the width is as long as the text
+Inline-block: like inline but able to change the width on the same paragraph
+None: hides the element as if it is not existed-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shafiq Akiya</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="img/cloud.png" alt="cloud-image">
+      <h1>I'm Shafiq</h1>
+      <!-- since parapgraph is a block type, to modify a sentence under one para, use <span> just like example below -->
+      <h2>a <span class="pro">pro</span>grammer</h2>
+      <img class="bottom-cloud" src="img/cloud.png" alt="cloud-image">
+      <img class="mountain" src="img/mountain.png" alt="cloud-image">
+    </div>
+
+    <div class="middle-container">
+      <div class="profile">
+        <img class="profile-pic" src="img/1.jpg" alt="profile-picture">
+        <h2>Hello.</h2>
+        <p class="profile-description">I am a web designer and developer. Love everything about 🎌 and coffee ☕</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="skills-pic"src="img/web.gif" alt="my-skills">
+          <h3>Web Design & Development</h3>
+          <p class="code-skill-description">Intermediate skills of HTML5, CSS and Bootstrap 5.</p>
+        </div>
+        <div class="skill-row">
+          <img class="skills-japan" src="img/jp.gif" alt="">
+          <h3>Japanese Language</h3>
+          <p class="code-skill-description-2">Has conversational Japanese language via self-learning and approved by my Japanese colleagues and friends.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="experience-container">
+        <h2>Experience</h2>
+        <div class="experience">
+          <img class="fuso" src="img/fuso.jpg" alt="working-at-fuso">
+          <h3 class="company-name">Mitsubishi Fuso Truck and Bus Company</h3>
+          <p class="location"><span>川崎市、日本</span></p>
+          <p class="year-join-end">Nov '16 - April '17</p>
+          <ul class="remove-deco">
+            <li class="my-tasks">Gathering client's requirements and use for User Acceptance Test (UAT)</li>
+            <li class="my-tasks">Develop automation test integrated with Azure for Continuous Integration (CI), Selenium (automation) and Testrail (automation web test report)</li>
+            <li class="my-tasks">Develop data analysis and documented weekly report to the reporting manager</li>
+          </ul>
+        </div>
+        <div class="experience-two">
+          <img class="nova" src="img/nova.jpg" alt="working-at-fuso">
+          <h3 class="company-name">Novartis (M) Sdn. Bhd.</h3>
+          <p class="location"><span>Petaling Jaya, Malaysia</span></p>
+          <p class="year-join-end">Sep '19- Oct '20'</p>
+          <ul class="remove-deco">
+            <li class="my-tasks">Gathering client's requirements and use for User Acceptance Test (UAT)</li>
+            <li class="my-tasks">Develop automation test integrated with Azure for Continuous Integration (CI), Selenium (automation) and Testrail (automation web test report)</li>
+            <li class="my-tasks">Develop data analysis and documented weekly report to the reporting manager</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you would like to have an awesome and cool web developer.</h3>
+        <p class="contact-message">Please contact me anytime from 9:00 am until 6:00 pm (JST) and we may discuss further.</p>
+        <a class="btn" href="mailto:hamsting95@email.com">CONTACT ME</a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/in/shafiqakiya">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p class="footer-bottom">©2020 Shafiq Akiya.</p>
+    </div>
+
+  </body>
+</html>

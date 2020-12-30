@@ -1,0 +1,291 @@
+/* The Box Model: every tag has its own box, if we specify custom values, the box shape or form will change accordance to the value */
+/* Any div tag or other tag that is not in the box will get pushed down or sideways */
+/* can use  either px or % */
+/* if we specify border:solid, browser will set a default solid border of 3px. if specify anoher value, border will follow*/
+/* circle-shorthand: specifying values of property dimension in circle (top, right, bottom, left) */
+/* i.e: {border-width: 0 10px 20px 30px;} */
+/* padding: space or gap between text and the edge of the border; padding increases the size of a box*/
+/* margin: outer-zone of the box; if we set value for this, it will create a space between border and other element alongside it*/
+/* summary: border is the box, margin is outside of the box */
+/* Position porperty: has 4  (static, relative, absolute and fixed)
+Static: All HTML elements are static by default (meaning follow the predefined HTML values without CSS)
+Relative: follow the flow of the HTML relative to the changes in value in CSS; by using {left@top@bottom@right:value}
+when using Relative position, if there's an overlapping element, the element next to it or below it will not move or change its
+original position.
+Just imagine we use a margin to position the image hen using coordinates (top, bottom, right, left)
+Absolute: the positioning is like a margin relative whereby, if you use {position: absolute; right:30px;}, the element will leave
+a 30px gap at the right edge of a webpage (adding a margin inside its parent element)*/
+/*Fixed: the element will remain at the position we set even if we scroll to whichever direction in a webpage*/
+/* using text-align in parent container will make every element centered (if there's no width set) */
+/* if it has a block element & has a width set, center it using "auto" value in margin*/
+/*What colour pallete @ text styling to use?
+Serif (default font is serif) and Sans Serif*/
+/* not all browsers support all fonts, head to 'Web Safe Font' & 'CSS Font Stack' website to see more
+To make sure everyone see the font you want them to see, head to fonts.google.com, choose fonts you like to use,
+cop the link element (in the heading) and css element*/
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /* if using other font, write any fonts (verdana) then add a comma (ie: verdana, sans-serif) */
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.profile-description {
+  display: inline-block;
+  width: 30%;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.skill-row {
+  margin: 100px auto 100px auto;
+  width: 50%;
+  text-align: left;
+}
+
+h1 {
+  color: #66BFBF;
+  font-family: 'Sacramento', cursive;
+  /* static font-size when using px; dynamic: %, em, rem (this ignores the parent set, using the value written here) */
+  /* to get value of em/rem of 40px:- 40/16 = 2.5rem */
+  font-size: 5.625rem; /* 100% means the default size is 16px / as for 'em', means M therefore the size of 1em is 16px*/
+  margin: 50px auto 0 auto;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: helvetica, sans-serif;
+  line-height: 3;
+}
+
+hr {
+  border: 6px dotted grey;
+  border-bottom: none;
+  width: 4%;
+  margin: 80px auto;
+}
+
+p {
+  color: #40514e;
+  line-height: 2;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4a);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4a);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4a);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4a);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4a);
+  text-decoration: none;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.contact-message {
+  width: 30%;
+  margin: 40px auto 60px;
+}
+
+.experience {
+  margin: 100px 20%;
+  text-align: left;
+}
+
+.experience-two {
+  margin: 100px 20%;
+  text-align: left;
+}
+
+.experience-two .year-join-end {
+  display: inline-block;
+  margin: 0 0 0 5%;
+  font-weight: 700;
+}
+
+.fuso {
+  float: left;
+  height: 17.5rem;
+  margin: 5px 10px 0 0;
+  padding: 15px 20px 0 0;
+  width: 40%;
+}
+
+.nova {
+  float: right;
+  height: 17.5rem;
+  margin: 5px 0 0 10px;
+  padding: 15px 0 0 20px;
+  width: 40%;
+}
+
+.my-tasks {
+  line-height: 1.5;
+  margin: 0.5rem auto;
+}
+
+.skills-pic {
+  border-radius: 30%;
+  /* float is used to make image float/wrap with the texts/paragraph in the same line */
+  /* only use float to wrap texts! not to position elements */
+  float: left;
+  margin-right: 30px;
+  margin-top: 15px;
+  width: 25%;
+}
+
+.skills-japan {
+  float: right;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 25%;
+}
+
+.location{
+  display: inline-block;
+  font-weight: 700;
+}
+
+.year-join-end {
+  display: inline-block;
+  margin: 0 5%;
+  font-weight: 700;
+}
+
+/* CSS Display property: has 4 diff values (block, inline, inline-block,none)
+Block display: those that take up the whole width of the screen, thus blocking out other element that sit next to it
+Element that uses block: <p>,h1 to h6, <div>, list <ul> & <ol>, and <form>*/
+.pro {
+  text-decoration: underline;
+}
+
+.profile h2 {
+  font-weight: 700;
+}
+
+/* .experience-container {
+  padding:0;
+} */
+
+.remove-deco {
+  padding-left: 0;
+}
+
+.top-container {
+  background-color: #eaf6f6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.footer-bottom {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  margin: 0;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eaf6f6;
+  border-bottom: 1px solid;
+}
+
+@media (max-width:1100px) {
+   .contact-me h3 {
+     display: inline-block;
+     width: 12.5rem;
+   }
+
+   .experience {
+     margin: 100px 30%;
+     text-align: center;
+   }
+
+   .experience-two {
+     margin: 100px 30%;
+     text-align: center;
+   }
+
+   .fuso {
+     float: none;
+     width: 50%;
+     height: 150px;
+     padding: 0;
+   }
+
+   .nova {
+     float: none;
+     width: 50%;
+     height: 150px;
+     padding: 0;
+   }
+ }
+/* .footer-link {
+  display: inline-block;
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  width: 100px;
+  padding-bottom: 20px;
+} */
